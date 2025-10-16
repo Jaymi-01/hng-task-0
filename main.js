@@ -1,6 +1,6 @@
 const timeElement = document.querySelector('[data-testid="test-user-time"]');
 function updateTime() {
-  timeElement.textContent = `Current Time: ${Date.now()}`;
+  timeElement.textContent = `Current Time: ${Date.now()} ms`;
 }
 updateTime();
 setInterval(updateTime, 1000);
