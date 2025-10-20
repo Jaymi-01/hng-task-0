@@ -1,0 +1,104 @@
+body {
+  font-family: sans-serif;
+  background-color: #01253d;
+  color: #333;
+  margin: 0;
+  padding: 6rem 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+main[data-testid="test-about-page"] {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+h1 {
+  text-align: center;
+  color: #01253d;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.about-section {
+  padding: 1.2rem;
+  background-color: #f9f9f9;
+  border-radius: 0.8rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.about-section h2 {
+  color: #01253d;
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  text-decoration: underline;
+}
+
+.about-section p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Tablet*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    padding: 7rem 3rem 3rem;
+  }
+
+  main[data-testid="test-about-page"] {
+    padding: 3rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .about-section {
+    padding: 1.8rem;
+  }
+
+  .about-section h2 {
+    font-size: 1.4rem;
+  }
+
+  .about-section p {
+    font-size: 1rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+  body {
+    padding: 8rem 4rem 4rem;
+  }
+
+  main[data-testid="test-about-page"] {
+    padding: 3.5rem 4rem;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .about-section {
+    padding: 2rem;
+  }
+
+  .about-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-section p {
+    font-size: 1.05rem;
+  }
+}
