@@ -1,19 +1,21 @@
-# 🧑‍💼 Profile Card Component
+# 🧑‍💼 Profile Card & Portfolio Pages
 
-A responsive, accessible **Profile Card** built with **HTML, CSS, and vanilla JavaScript**.  
-It displays a user’s name, bio, avatar image, current time (in milliseconds), social links, hobbies, and dislikes.  
-All elements include `data-testid` attributes for automated testing compatibility.
+A responsive and accessible multi-page web project built with HTML, CSS, and vanilla JavaScript.
+The project includes a Profile Card, About Page, and Contact Form, each styled for responsiveness and accessibility.
+All interactive elements include data-testid attributes for automated testing compatibility.
 
 ---
 
-## ✨ Features
-
-- Semantic and accessible HTML structure  
-- Fully responsive (mobile → tablet → desktop)  
-- Dynamic current time display (updates every second)  
-- Avatar image loaded from a fixed URL  
-- Social media links open safely in a new tab  
-- Clean and modern layout using Flexbox  
+## Features
+- Semantic and accessible HTML structure
+- Fully responsive (Mobile → Tablet → Desktop)
+- Dynamic profile section with real-time updates
+- Reusable header navigation (with accessible hamburger menu)
+- Functional contact form with field validation and success message
+- Structured About page with reflective sections
+- Keyboard navigable components
+- Screen reader–friendly success/error feedback
+- Clean, modern layout using Flexbox and media queries
 - Ready for integration with automated UI tests
 
 ---
@@ -22,16 +24,26 @@ All elements include `data-testid` attributes for automated testing compatibilit
 
 - profile-card/
 - │
-- ├── index.html # Main HTML page
-- ├── styles.css # All styling and responsive layouts
-- ├── script.js # JavaScript logic (time + avatar loading)
-- └── README.md # Project documentation
+- ├── index.html           # Profile Card (main page)
+- ├── about.html           # Reflective About page
+- ├── contact.html         # Contact form page
+- │
+- ├── header.html          # Shared header component
+- ├── header.css           # Header styling (responsive nav)
+- ├── header.js            # Hamburger toggle + accessibility logic
+- │
+- ├── styles.css           # Profile card styles
+- ├── about.css            # About page styles
+- ├── contact.css          # Contact form styles
+- │
+- ├── script.js            # Profile Card logic (time + avatar)
+- └── README.md            # Project documentation
 
 ---
 
 ## 🧰 Technologies Used
 
-- **HTML5**
+- **HTML5 Semantic structure and accessibility**
 - **CSS3 (Flexbox + Media Queries)**
 - **Vanilla JavaScript (ES6)**
 
