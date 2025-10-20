@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #01253d;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 6rem 1rem 2rem; 
+}
+
+.contact-container {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 1rem; 
+  transition: all 0.3s ease;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #01253d;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #007acc;
+  box-shadow: 0 0 5px rgba(0, 122, 204, 0.4);
+}
+
+button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #01253d;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #014a7a;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+  min-height: 1em;
+}
+
+.success-message {
+  color: green;
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    padding: 7rem 3rem 3rem;
+  }
+
+  .contact-container {
+    max-width: 700px;
+    padding: 3rem;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  button {
+    font-size: 1.05rem;
+    padding: 1rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+  body {
+    padding: 8rem 4rem 4rem;
+  }
+
+  .contact-container {
+    max-width: 800px;
+    padding: 3.5rem 4rem;
+    margin: 0 auto;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-group {
+    width: 100%;
+  }
+
+  button {
+    font-size: 1.1rem;
+    padding: 1rem;
+    width: 50%;
+    align-self: center;
+  }
+}
